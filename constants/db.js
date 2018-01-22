@@ -1,19 +1,34 @@
-const sites = [
+const proxySites = [
   {
-    name: 'kx',
+    name: '开心代理',
     page: 1,
     pageItem: 10,
+    maxPage: 10,
     startUrl: 'http://www.kxdaili.com/dailiip/1/',
     endUrl: '.html#ip'
   },
   {
-    name: 'xc',
+    name: '西刺代理',
     page: 1,
     pageItem: 99,
+    maxPage: 2654,
     startUrl: 'http://www.xicidaili.com/nn/'
+  },
+  {
+    name: '爬虫代理',
+    page: 1,
+    pageItem: 13,
+    maxPage: 21,
+    startUrl: 'http://www.pcdaili.com/index.php?m=daili&a=free&type=1&page='
+  },
+  {
+    name: '快代理',
+    page: 1,
+    pageItem: 15,
+    maxPage: 2065,
+    startUrl: 'https://www.kuaidaili.com/free/inha/'
   }
 ];
-
 const userAgents = [
   'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.0.12) Gecko/20070731 Ubuntu/dapper-security Firefox/1.5.0.12',
   'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; Acoo Browser; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.0.04506)',
@@ -34,6 +49,9 @@ const userAgents = [
   'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; QQBrowser/7.0.3698.400)',
   'Opera/9.25 (Windows NT 5.1; U; en), Lynx/2.8.5rel.1 libwww-FM/2.14 SSL-MM/1.4.1 GNUTLS/1.2.9',
   'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
-]
+];
 
-export { pageUrls, sites, userAgents }
+module.exports = {
+  proxySites,
+  userAgents
+};
